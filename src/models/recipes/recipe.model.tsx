@@ -1,4 +1,4 @@
-import { CalorieInformation, FinancialInformation, Ingredient } from "../ingredients/ingredient.model";
+import { ExpirationInformation, CalorieInformation, FinancialInformation, Ingredient } from "../ingredients/ingredient.model";
 
 export enum RecipeType {
     BREAKFAST,
@@ -21,6 +21,7 @@ export type Recipe = DisplayRecipe & {
     servingNumber: number;
     description: string;
     ingredientList: Ingredient[];
+    ingredientExpirationData: ExpirationInformation;
     calorieData: CalorieInformation;
     financialData: FinancialInformation;
 }
