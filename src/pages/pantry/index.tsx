@@ -1,5 +1,5 @@
 import PageWrapper from "@/src/components/page-wrapper";
-import SelectedRecipeCards from '@/src/components/home/selected-recipes'
+import IngredientCardGrid from '@/src/components/pantry/ingredient-card-grid'
 import { Ingredient, MeasurementTypes } from '@/src/models/ingredients/ingredient.model'
 import Link from 'next/link'
 
@@ -23,9 +23,7 @@ const PantryPage = () => {
     return (
         <>
             <PageWrapper>
-                <>
-                </>
-                {/* <SelectedRecipeCards recipes={FakePantryItemsForTesting} sectionLabel={'Test Recipe Section'} /> */}
+                <IngredientCardGrid  ingredients={FakePantryItemsForTesting} sectionLabel={'Test Pantry Section'}/>
             </PageWrapper>
         </>
     )
